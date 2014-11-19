@@ -13,4 +13,15 @@ jQuery(function() {
 		$(this).parent("dt").next("dd").slideToggle();
 	});
 
+	$(".more a").click(function(e){
+		e.preventDefault();
+		$(this).next(".report").toggle();
+	});
+	$(".down_arr a").click(function(e){
+		e.preventDefault();
+		$(this).parent().next(".comment_form").slideToggle();
+		$(this).parent().toggleClass("up_arr");
+
+	});
+
 });
