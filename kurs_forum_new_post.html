@@ -161,25 +161,51 @@
 		</div>
 		<div class="col-sm-9 col-sm-height col-top">
 			<section class="main_content">
-				<h1>Визуализация Японии</h1>
-				<h4>Как пользоваться форумом</h4>
-				<div class="forum_options">
-					<h5>Найти дискуссии</h5>
-					<div class="row d_prop_list">
-						<div class="col-md-4"><div class="d_prop d_theme">Сосредоточиться на конкретных темах</div></div>
-						<div class="col-md-4"><div class="d_prop d_search">Поиск конкретных должностей</div></div>
-						<div class="col-md-4"><div class="d_prop d_sort">Сортировать по дате или комментариям</div></div>
+				<h1>Новый пост</h1>
+				<form role="form" class="newpost_form">
+					<div class="form-group">
+						<label for="sel01">Тип поста</label>
+						<div class="explain">
+							Поднять вопросы, которые требуют ответов. Обсуждение обмениваться идеями и начать переговоры
+						</div>
+						<select name="" id="sel01" class="form-control">
+							<option value="">Обсуждение</option>
+							<option value="">Предложение</option>
+							<option value="">Вопрос</option>
+						</select>
 					</div>
-					<h5>Взаимодействие с должности</h5>
-					<div class="row d_prop_list">
-						<div class="col-md-4"><div class="d_prop d_plus">Выбирать сообщения и хорошие отзывы</div></div>
-						<div class="col-md-4"><div class="d_prop d_flag">Сообщать об ошибках на форуме</div></div>
-						<div class="col-md-4"><div class="d_prop d_star">Следуйте сообщения для обновлений</div></div>
+					<div class="form-group">
+						<label for="sel02">Тема поста</label>
+						<div class="explain">
+							Добавить запись в соответствующей теме, чтобы помочь другим найти её
+						</div>
+						<select name="" id="sel02" class="form-control">
+							<option value="">Общий</option>
+							<option value="">Частный</option>
+							<option value="">Свой вариант</option>
+						</select>
 					</div>
-					<h5>Получать обновления</h5>
-					<div class="check_mail"><input type="checkbox"></div>
-					<div class="rtext">Установите этот флажок, чтобы получать по электронной почте переварить один раз в день с уведомлением о новой, непрочитанному деятельности от должности вы следующие.</div>
-				</div>
+					<div class="form-group">
+						<label for="sel02">Заголовок</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="tar32">Текст</label>
+						<textarea name="" id="tar32" rows="15" class="form-control" ></textarea>
+					</div>
+					<div class="form-group">
+						<div class="follow">
+							<input type="checkbox" id="chb01">
+							<label for="chb01">follow this post</label>
+						</div>
+						<div class="anon">
+							<input type="checkbox" id="chb02">
+							<label for="chb02">Анонимный пост</label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-default">Отправить</button>
+					<button type="reset" class="btn btn-reset">Отменить</button>
+				</form>
 			</section>
 		</div>
 	</div>

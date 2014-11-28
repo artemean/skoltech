@@ -10,7 +10,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -72,15 +72,15 @@
 				<p>Образовательные программы и объединенная программа по инновациям 
 				и предпринимательству в Сколтех станут гарантией того, что все студенты института будут понимать процессы коммерциализации науки и технологий. Базовые предметы в области инноваций и предпринимательства будут обязательны для всех студентов.</p>
 				<form role="form" class="qform">
-				  <div class="form-group">
-				    <label for="text-area1" class="caret_down">Задать вопрос</label>
-				    <textarea class="form-control" id="text-area1" rows="4"></textarea>
-				  </div>
-				  
-				  <div class="btn_wrap">
-				  	<button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Ваше сообщение отправлено">Отправить</button>
-				  	<!-- <div class="bubble">Ваше сообщение отправлено</div> -->
-				  </div>
+					<div class="form-group">
+						<label for="text-area1" class="caret_right">Задать вопрос</label>
+						<div class="retractable">
+							<textarea class="form-control" id="text-area1" rows="4"></textarea>
+							<div class="btn_wrap">
+								<button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Ваше сообщение отправлено">Отправить</button>
+							</div>
+						</div>
+					</div>
 				</form>
 				<h3>Общие вопросы</h3>
 				<dl class="faq">
@@ -203,8 +203,8 @@
 			<div class="col-sm-4 col-xs-12">
 				<ul class="footer_menu">
 					<li><a href="#">Как это работает</a></li>
+					<li><a href="#">Преподавателям</a></li>
 					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Онлайн педагогика</a></li>
 					<li><a href="#">Пользовательское соглашение</a></li>
 					<li><a href="#">Политика конфиденциальности</a></li>
 				</ul>			
@@ -212,7 +212,7 @@
 			<div class="col-sm-2 col-xs-12">
 				<ul class="footer_menu">
 					<li><a href="#">Регистрация</a></li>
-					<li><a href="#" class="jsLogin">Вход</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal">Вход</a></li>
 				</ul>			
 			</div>						
 		</div>
